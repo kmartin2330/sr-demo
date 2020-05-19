@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-        myActivities: localStorage.hasOwnProperty('my_activities') ? JSON.parse(localStorage.getItem('my_activities')) : []
+        myActivities: localStorage.hasOwnProperty('my_activities') ? JSON.parse(localStorage.getItem('my_activities')) : [],
     },
     mutations: {},
     actions: {
@@ -27,8 +27,10 @@ export default new Vuex.Store({
 
                 context.state.myActivities.push(activity);
                 context.dispatch('saveActivities')
-            }
 
+                return true
+            }
+            return false
         },
         clearSavedActivities(context) {
             context.state.myActivities = []

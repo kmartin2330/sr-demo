@@ -4,6 +4,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
+import izitoast from './plugins/izitoast';
+
+import './assets/custom.scss'
 
 Vue.config.productionTip = false
 
