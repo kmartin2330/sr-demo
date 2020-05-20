@@ -33,7 +33,7 @@
 
 				<v-container v-else>
 					<v-row>
-						<v-alert class="ma-5" outlined width="100%" color="orange" dense>No saved Activities here.</v-alert>
+						<v-alert class="ma-5" outlined width="100%" color="orange" dense>No activities saved yet.</v-alert>
 					</v-row>
 				</v-container>
 
