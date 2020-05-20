@@ -1,4 +1,4 @@
-# shoprenter
+# bored-api
 
 ## Project setup
 ```
